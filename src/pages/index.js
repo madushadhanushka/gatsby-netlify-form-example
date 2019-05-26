@@ -206,24 +206,34 @@ export default class Index extends React.Component {
       <div>
         <ul>
           <span className="text_span">
-          <div>First text to compare</div>
-          <textarea name="fileOne" value={this.state.valueOne} onChange={this.handleOneChange} rows={20} cols={70} spellCheck="false" />
+            <div>First text to compare</div>
+            <textarea name="fileOne" value={this.state.valueOne} onChange={this.handleOneChange} rows={20} cols={70} spellCheck="false" />
           </span>
           <span className="text_span">
-          <div>Second text to compare</div>
-          <textarea name="fileTwo" value={this.state.valueTwo} onChange={this.handleTwoChange} rows={20} cols={70} spellCheck="false" />
+            <div>Second text to compare</div>
+            <textarea name="fileTwo" value={this.state.valueTwo} onChange={this.handleTwoChange} rows={20} cols={70} spellCheck="false" />
           </span>
-          
+
         </ul>
         <div className="button_div">
-          <span  className="radio_button"><input type="radio" name="selType" value="Plain" checked={this.state.compMode === "Plain"} onChange={this.onPlainChanged} />Plain&nbsp;&nbsp;</span>
-        <span  className="radio_button"><input class="radio" type="radio" name="selType" value="XML" checked={this.state.compMode === "XML"} onChange={this.onXMLChanged} />XML&nbsp;&nbsp;</span>
-        <span  className="radio_button"><input class="radio" type="radio" name="selType" value="JSON" checked={this.state.compMode === "JSON"} onChange={this.onJsonChanged} />JSON&nbsp;&nbsp;</span>
-        <span  className="radio_button"><input class="radio" type="radio" name="selType" value="Property" checked={this.state.compMode === "Property"} onChange={this.onPropChanged} />Property</span>
-        <button className="submit_button" type="submit" onClick={this.getDiff}>Compare</button>
+          <span className="radio_button"><input type="radio" name="selType" value="Plain" checked={this.state.compMode === "Plain"} onChange={this.onPlainChanged} />Plain&nbsp;&nbsp;</span>
+          <span className="radio_button"><input class="radio" type="radio" name="selType" value="XML" checked={this.state.compMode === "XML"} onChange={this.onXMLChanged} />XML&nbsp;&nbsp;</span>
+          <span className="radio_button"><input class="radio" type="radio" name="selType" value="JSON" checked={this.state.compMode === "JSON"} onChange={this.onJsonChanged} />JSON&nbsp;&nbsp;</span>
+          <span className="radio_button"><input class="radio" type="radio" name="selType" value="Property" checked={this.state.compMode === "Property"} onChange={this.onPropChanged} />Property</span>
+          <button className="submit_button" type="submit" onClick={this.getDiff}>Compare</button>
         </div>
-        <br/>
+        <br />
         <div id="diff_content"></div>
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140800454-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments); }
+          gtag('js', new Date());
+        
+          gtag('config', 'UA-140800454-1');
+</script>
+
       </div>
     );
   }

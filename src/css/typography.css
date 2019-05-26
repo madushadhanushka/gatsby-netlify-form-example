@@ -5,6 +5,7 @@ html {
 }
 body {
   margin: 0;
+  font-family: sans-serif;
 }
 article,
 aside,
@@ -109,7 +110,14 @@ optgroup,
 select,
 textarea {
   font: inherit;
-  margin: 0;
+  margin: 10px;
+  resize: none;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  color: #495057;
+  font-weight: 400;
+  font-size: 15px;
+  font-family: sans-serif;
 }
 optgroup {
   font-weight: 700;
@@ -569,19 +577,6 @@ abbr[title] {
 thead {
   text-align: left;
 }
-td,
-th {
-  text-align: left;
-  border-bottom: 1px solid hsla(0, 0%, 0%, 0.12);
-  font-feature-settings: "tnum";
-  -moz-font-feature-settings: "tnum";
-  -ms-font-feature-settings: "tnum";
-  -webkit-font-feature-settings: "tnum";
-  padding-left: 0.96667rem;
-  padding-right: 0.96667rem;
-  padding-top: 0.725rem;
-  padding-bottom: calc(0.725rem - 1px);
-}
 th:first-child,
 td:first-child {
   padding-left: 0;
@@ -621,4 +616,24 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+}
+.radio_button{
+  cursor: pointer;
+}
+.submit_button{
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #2e6da4;
+  font-weight: 400;
+  cursor: pointer;
+}
+.text_span{
+  float: left;
+}
+.button_div{
+  float: left;
+}
+#diff_content{
+  float: left;
+  width: 100%;
 }

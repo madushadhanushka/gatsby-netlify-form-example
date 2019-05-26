@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "bootstrap": "^4.3.1",
     "diff": "^4.0.1",
     "diff2html": "^2.9.0",
     "dot-properties": "^0.3.1",
@@ -12,12 +13,15 @@
     "gatsby-plugin-react-helmet": "^1.0.1",
     "json-keys-sort": "^1.2.0",
     "react-async-script": "^0.9.1",
+    "react-bootstrap": "^1.0.0-beta.8",
     "react-gh-like-diff": "^1.0.6",
     "react-google-recaptcha": "^0.11.1",
+    "react-redux": "^5.1.1",
     "sort-json": "^2.0.0",
     "xml-c14n": "0.0.6",
     "xml-js": "^1.6.11",
-    "xml2json": "^0.11.2"
+    "xml2json": "^0.11.2",
+    "xmldom": "^0.1.27"
   },
   "devDependencies": {
     "dotenv": "^5.0.1",

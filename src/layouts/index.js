@@ -14,10 +14,10 @@ export default class Template extends React.Component {
     return (
       <div>
         <Helmet
-          title="Gatsby Default Starter"
+          title="DifferApp - Smart File Comparison Tool"
           meta={[
-            { name: "description", content: "Sample" },
-            { name: "keywords", content: "sample, something" },
+            { name: "description", content: "A Smart File Comparison Tool" },
+            { name: "keywords", content: "File comparison, file diff, text" },
           ]}
         />
         <div
@@ -41,7 +41,7 @@ export default class Template extends React.Component {
                   textDecoration: "none",
                 }}
               >
-                Gatsby
+                Differ App
               </Link>
             </h1>
           </div>
